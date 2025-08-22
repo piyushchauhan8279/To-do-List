@@ -235,3 +235,62 @@ body.dark .meta {
     width: 100%;
   }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .input-section {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .input-section input,
+  .input-section select,
+  .input-section button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;  /* larger tap area */
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .btn-group {
+    margin-top: 8px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .toggle-btn {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+
+  .clear-btn {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}
