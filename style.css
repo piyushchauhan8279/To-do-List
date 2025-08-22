@@ -10,8 +10,9 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 10px;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -134,7 +135,6 @@ li {
   transition: 0.3s;
 }
 
-/* Fix for Dark Mode Tasks */
 body.dark li {
   background: #2a2a2a;
   color: #fff;
@@ -227,26 +227,19 @@ body.dark .meta {
 }
 
 /* Responsive */
-@media (max-width: 500px) {
-  .input-section {
-    flex-direction: column;
-  }
-  .input-section button {
-    width: 100%;
-  }
-}
-
-
-/* Make container full width on smaller screens */
 @media (max-width: 768px) {
   .container {
-    width: 95%;       /* almost full width */
+    width: 95%;
     padding: 20px;
     border-radius: 12px;
   }
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  .input-section {
+    flex-direction: column;
   }
 
   .input-section input,
@@ -272,15 +265,14 @@ body.dark .meta {
   }
 }
 
-/* Extra small phones */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .container {
     width: 98%;
     padding: 15px;
   }
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .input-section input,
