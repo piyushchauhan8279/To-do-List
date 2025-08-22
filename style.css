@@ -255,6 +255,10 @@ body.dark .meta {
   }
   body {
     padding: 0;
+    display: block !important; /* Force block layout */
+    align-items: initial !important;
+    justify-content: initial !important;
+    flex-direction: initial !important;
   }
   .input-section input,
   .input-section select,
